@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>ArtShop</display-name>
+ <session-config>
+ <session-timeout>30</session-timeout>
+ </session-config>
+  <welcome-file-list>
+    <welcome-file>pages/index.jsp</welcome-file>
+  </welcome-file-list>
+  <context-param>
+  <param-name>1</param-name>
+  <param-value>Paintings</param-value>
+  </context-param>
+  <context-param>
+  <param-name>2</param-name>
+  <param-value>Drawings</param-value>
+  </context-param>
+  <context-param>
+  <param-name>3</param-name>
+  <param-value>Sculptures</param-value>
+  </context-param>
+ <servlet>
+ <servlet-name>Main</servlet-name>
+ <servlet-class>com.sonali.artshop.MainServlet</servlet-class>
+ </servlet>
+ <servlet>
+ <servlet-name>Register</servlet-name>
+ <servlet-class>com.sonali.artshop.RegisterServlet</servlet-class>
+ </servlet>
+ <servlet>
+ <servlet-name>Login</servlet-name>
+ <servlet-class>com.sonali.artshop.LoginServlet</servlet-class>
+ </servlet>
+ <servlet>
+ <servlet-name>Checkout</servlet-name>
+ <servlet-class>com.sonali.artshop.CheckoutServlet</servlet-class>
+ </servlet>
+<!--  <servlet-mapping> -->
+<!--  <servlet-name>Main</servlet-name> -->
+<!--  <url-pattern>/home</url-pattern> -->
+<!--   </servlet-mapping> -->
+<!--    <servlet-mapping> -->
+<!--   <servlet-name>Register</servlet-name> -->
+<!--  <url-pattern>/register</url-pattern> -->
+<!--  </servlet-mapping> -->
+</web-app>
